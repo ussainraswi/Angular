@@ -1,0 +1,35 @@
+<h1>Login Page</h1>
+
+
+  <div class="col-md-6">
+
+<!-- 
+    <div class="form-group">
+        <span>File</span>
+        <input type="file"  [(ngModel)]="file" class="form-control"/>        
+    </div> -->
+
+    <div class="form-group">
+      <span>Username</span>
+      <!-- <input type="text" name="username" class="form-control"> -->
+
+      <input type="text" pInputText [(ngModel)]="username" class="form-control"/>
+
+
+    </div>
+
+    <div class="form-group">
+        <span>Password</span>
+        <input type="text" pInputText [(ngModel)]="password" class="form-control"/>
+        <!-- <input type="text" name="password" class="form-control"> -->
+    </div>
+
+    <div class="form-group">
+        
+        <!-- <input type="submit" name="submit" class="form-control btn btn-info"> -->
+        <button pButton type="button" (click)="login()" label="Login" class="btn btn-info form-control">Login</button>
+        
+    </div>
+  </div>
+  
+  
